@@ -1,0 +1,133 @@
+/* Custom color variables */
+:root {
+    --color1: #bdd1e1;  /* Light Blue */
+    --color2: #2e6eb1;  /* Deep Blue */
+    --color3: #2d0609;  /* Dark Red */
+    --color4: #51c2d8;  /* Cyan */
+}
+
+/* General Styles */
+body {
+    font-family: 'Playwrite DE Grund', sans-serif;
+    background-color: var(--color1);
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: var(--color2);
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link,
+.navbar .fab {
+    color: var(--color1);
+}
+
+.navbar .nav-link:hover,
+.navbar .fab:hover {
+    color: var(--color4);
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: var(--color1);
+    color: var(--color3);
+}
+
+.hero-section h1 {
+    color: var(--color2);
+}
+
+.hero-section .btn {
+    background-color: var(--color2);
+    color: var(--color1);
+}
+
+.hero-section .btn:hover {
+    background-color: darken(var(--color2), 10%);
+}
+
+/* Fall Section */
+.fall-section {
+    background-color: var(--color4);
+    padding: 60px 0;
+}
+
+.fall-section h2 {
+    color: var(--color2);
+}
+
+.fall-section p {
+    color: var(--color3);
+}
+
+.fall-section .lead {
+    color: var(--color1);
+}
+
+.fall-section .img-fall img {
+    border: 5px solid var(--color2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.content-fall h3 {
+    color: var(--color2);
+    margin-top: 20px;
+}
+
+/* Other Sections */
+.section-bg-blue {
+    background-color: var(--color2);
+    color: var(--color1);
+}
+
+.section-bg-red {
+    background-color: var(--color3);
+    color: var(--color1);
+}
+
+.section-bg-cyan {
+    background-color: var(--color4);
+    color: var(--color2);
+}
+
+/* Buttons */
+.btn {
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn-lg {
+    font-size: 1.2rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar .nav-link {
+        font-size: 0.9rem;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .fall-section h2 {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* Custom gradient background */
+.gradient-bg {
+    background: linear-gradient(to bottom right, #02283c, #539b9c, #57aeb6, #7fc8ca, #e8f1f0);
+}
+.our-services .card-img-top {
+    height: 200px; /* Adjust height as needed */
+    object-fit: cover;
+}
